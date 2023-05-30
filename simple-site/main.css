@@ -1,0 +1,48 @@
+/*Suporte pra tema escuro
+O seletor de :root representa o elemento <html> na página HTML. Para esse tipo de tarefa, uma melhor prática 
+é definir um conjunto de variáveis CSS globais em uma regra CSS com o seletor :root. Neste exemplo, você 
+definiu três variáveis coloridas. Em seguida, você poderá usar essas variáveis em outras regras do CSS.*/
+:root {
+  --green: #00FF00;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+/*Body diz onde esse estito vai ser aplicado font-family é o nome da propriedade, em seguida vem o valor do 
+estilo. Além disso estou definindo as propriedades "background" e "color" e todos os elementos dentro de body
+herdar*/
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+/*ul diz onde esse estilo vai ser aplicado*/
+ul {
+    font-family: helvetica;
+}
+
+li {
+    list-style: circle;
+}
+/*Os dois a seguir são para atributos personalizados
+.list é um seletor da classe. Todo atributo que tenha "class" definido com list herdará os estilos que
+são definidos neste mesmo seletor (.list)*/
+ .list {
+    list-style: square;
+ }
+/*Este é um seletor de ID. O elemento HTML atribuído "id" e definido como "msg" herdará os estilos que
+são definidos neste mesmo seletor (#msg)*/
+  #msg {
+    font-family: monospace;
+  }
+/*Mudar tema
+Criei variáveis (--bg e -- fontColor) elas usam a palavra chave "var" para definir que cores usar 
+criadas no "root"*/
+ .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+}
+ .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+ }
