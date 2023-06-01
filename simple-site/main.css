@@ -16,10 +16,10 @@ body {
     color: var(--fontColor);
     font-family: helvetica;
 }
-/*ul diz onde esse estilo vai ser aplicado*/
+/*ul diz onde esse estilo vai ser aplicado
 ul {
     font-family: helvetica;
-}
+}*/
 
 li {
     list-style: circle;
@@ -31,10 +31,10 @@ são definidos neste mesmo seletor (.list)*/
     list-style: square;
  }
 /*Este é um seletor de ID. O elemento HTML atribuído "id" e definido como "msg" herdará os estilos que
-são definidos neste mesmo seletor (#msg)*/
+são definidos neste mesmo seletor (#msg)
   #msg {
     font-family: monospace;
-  }
+  }*/
 /*Mudar tema
 Criei variáveis (--bg e -- fontColor) elas usam a palavra chave "var" para definir que cores usar 
 criadas no "root"*/
