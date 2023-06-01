@@ -7,6 +7,7 @@
     <title>Simple WebSite</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body class="dark-theme">
     <h1>Task List</h1>
     <p id="msg">Current tasks:</p>
@@ -15,5 +16,12 @@
         <li class="list">Add light and dark themes</li>
         <li>Enable switching the theme</li>
     </ul>
+    <div>
+        <button class="btn">Dark</button>
+    </div>
+    <!--Chama o js no final do body para poder primeiro carregar todo o conteúdo antes-->
+    <script src="app.js"></script>
+    <!--Tolerância de falha na qual informa o usuário que o mesmo precisará ativar o JS para visualizar todo o site-->
+    <noscript>Você precisa ativar o JavaScript para visualizar todo o conteúdo do site</noscript>
 </body>
 </html>
