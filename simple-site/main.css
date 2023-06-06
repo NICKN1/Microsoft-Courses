@@ -16,6 +16,18 @@ body {
     color: var(--fontColor);
     font-family: helvetica;
 }
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 80%;
+     
+    color: var(--btnFontColor);
+    background-color: var(--bntBg);
+ }
 /*ul diz onde esse estilo vai ser aplicado
 ul {
     font-family: helvetica;
@@ -52,14 +64,3 @@ criadas no "root"*/
     --btnFontColor: var(--white);
  }
 
- .btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
-    border-radius: 80%;
-
-    color: var(--btnFontColor);
-    background-color: var(--bntBg);
- }
